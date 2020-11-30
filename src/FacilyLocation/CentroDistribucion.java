@@ -1,17 +1,20 @@
 package FacilyLocation;
 
+import java.util.ArrayList;
+
 public class CentroDistribucion {
 	
 	private int _numero;
 	private double _latitud;
 	private double _longitud;
-
+	private ArrayList<Persona> _clientes;
 	
 	public CentroDistribucion(int numero, double latitud, double longitud)
 	{
 		_numero = numero;
 		_latitud = latitud;
 		_longitud = longitud;
+		_clientes = new ArrayList<Persona>();
 	}
 	
 		
@@ -26,5 +29,12 @@ public class CentroDistribucion {
 	public int get_nombre() {
 		return _numero;
 	}
+	
+	@SuppressWarnings("unchecked")
+	public ArrayList<Persona> getClientes()
+	{
+		return (ArrayList<Persona>) _clientes.clone();
+	}
+
 
 }
