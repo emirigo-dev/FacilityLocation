@@ -1,18 +1,20 @@
 package FacilyLocation;
 
-public class Persona {
 
-	private String _nombre;
+public class Locales {
+	
+	private int _numero;
 	private double _latitud;
 	private double _longitud;
 	
-	public Persona(String nombre, double latitud, double longitud)
+	public Locales(int numero, double latitud, double longitud)
 	{
-		_nombre = nombre;
+		_numero = numero;
 		_latitud = latitud;
 		_longitud = longitud;
 	}
 	
+		
 	public double getLongitud() {
 		return _longitud;
 	}
@@ -21,8 +23,9 @@ public class Persona {
 		return _latitud;
 	}
 
-	public String getNombre() {
-		return _nombre;
+	public int getNumero() {
+		return _numero;
 	}
+	
 
 }

@@ -1,9 +1,8 @@
 package FacilyLocation;
 
-import java.text.DecimalFormat;
 
 
-public class ComparadorDistancia {
+public class FormulaDistancia {
 	
 	public static double total(double lat1, double lon1, double lat2, double lon2) {
 		final int R = 6371; // Radious of the eart
