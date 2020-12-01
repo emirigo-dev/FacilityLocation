@@ -5,28 +5,35 @@ import java.util.ArrayList;
 public class Instancia {
 
 	private ArrayList<Locales> _locales;
+	private int _cantidadApertura;
 	private ArrayList<Persona> _clientes;
 
-	public Instancia() {
+	public Instancia(int cantidadApertura) {
 		_locales = new ArrayList<Locales>();
-		_clientes = new ArrayList<Persona>();
+		_cantidadApertura = cantidadApertura;
+		//_clientes = new ArrayList<Persona>();
 	}
 
 	public void agregarClientes(Persona cliente) {
 		_clientes.add(cliente);
 	}
 
-	public void agregarLocal(Locales local) {
+	public void agregar(Locales local) {
 		_locales.add(local);
 	}
 
-	@SuppressWarnings("unchecked")
+		
 	public ArrayList<Persona> getClientes() {
-		return (ArrayList<Persona>) _clientes.clone();
+		return _clientes;
 	}
+
 
 	@SuppressWarnings("unchecked")
 	public ArrayList<Locales> getCentroDistribucion() {
 		return (ArrayList<Locales>) _locales.clone();
+	}
+
+	public int getCantidadApertura() {
+		return _cantidadApertura;
 	}
 }
