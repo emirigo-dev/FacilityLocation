@@ -10,13 +10,13 @@ public class Solver {
 		_instancia = instancia;
 	}
 
-	private void calcularDistanciasForeach() {
-		for (Locales locales : _instancia.getCentroDistribucion()) {
+	private void calcularCostoTotal() {
+		for (Locales local : _instancia.getCentroDistribucion()) {
 			double distanciaTotal = 0;
 			for (Persona cliente : _instancia.getClientes()) {
-				distanciaTotal += FormulaDistancia.total(locales.getLatitud(), locales.getLongitud(), cliente.getLatitud(), cliente.getLongitud());
+				distanciaTotal += FormulaDistancia.total(local.getLatitud(), local.getLongitud(), cliente.getLatitud(), cliente.getLongitud());
 			}
-			locales.setDistancia(distanciaTotal);
+			local.setCostoTotal(distanciaTotal);
 		}
 		
 	}
@@ -24,7 +24,7 @@ public class Solver {
 	public Solucion resolver(int cantidadApertura) {
 		Solucion ret = new Solucion();
 		int contador = 0;
-		calcularDistanciasForeach();
+		calcularCostoTotal();
 		while(contador<cantidadApertura) {
 			ret.agregar(localesOrdenados().get(contador));
 			contador ++;

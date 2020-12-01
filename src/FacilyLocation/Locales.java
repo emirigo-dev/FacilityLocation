@@ -8,7 +8,7 @@ public class Locales implements Comparable<Locales>{
 	private double _latitud;
 	private double _longitud;
 	private ArrayList<Persona> _clientes;
-	private double _distancia;
+	private double _costoTotal;
 	
 	public Locales(int numero, double latitud, double longitud)
 	{
@@ -16,7 +16,7 @@ public class Locales implements Comparable<Locales>{
 		_latitud = latitud;
 		_longitud = longitud;
 		_clientes = new ArrayList<Persona>();
-		_distancia = 0;
+		_costoTotal = 0;
 	}
 	
 		
@@ -33,8 +33,8 @@ public class Locales implements Comparable<Locales>{
 	}
 
 
-	public double getDistancia() {
-		return _distancia;
+	public double getCostoTotal() {
+		return _costoTotal;
 	}
 
 
@@ -42,14 +42,14 @@ public class Locales implements Comparable<Locales>{
 		_clientes.add(cliente);
 	}
 		
-	public void setDistancia(double _distancia) {
-		this._distancia = _distancia;
+	public void setCostoTotal(double costoTotal) {
+		this._costoTotal = costoTotal;
 	}
 
 
 	@Override
 	public int compareTo(Locales otro) {
-		return (int) (this.getDistancia() - otro.getDistancia());
+		return (int) (this.getCostoTotal() - otro.getCostoTotal());
 	}
 	
 
