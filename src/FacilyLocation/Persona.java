@@ -13,15 +13,15 @@ public class Persona {
 		_longitud = longitud;
 	}
 	
-	public double get_longitud() {
+	public double getLongitud() {
 		return _longitud;
 	}
 
-	public double get_latitud() {
+	public double getLatitud() {
 		return _latitud;
 	}
 
-	public String get_nombre() {
+	public String getNombre() {
 		return _nombre;
 	}
 	
