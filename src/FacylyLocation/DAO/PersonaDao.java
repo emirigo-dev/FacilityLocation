@@ -1,6 +1,7 @@
 package FacylyLocation.DAO;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 import com.google.gson.Gson;
@@ -11,10 +12,10 @@ public class PersonaDao {
 
 	public static Persona [] personasFromJson () {
 		
-		Persona [] personas = new Persona[95];
+		Persona [] personas = new Persona [7];
 		
 		try {
-			BufferedReader br = new BufferedReader (new FileReader("C:/Users/Usuario/git/FacilityLocation/resources/personas.json"));
+			BufferedReader br = new BufferedReader (new FileReader("personas.json"));
 			Gson gson = new Gson();
 			personas = gson.fromJson(br, Persona[].class);
 		}catch (Exception e) {
@@ -25,12 +26,13 @@ public class PersonaDao {
 		return personas;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
+		
 		
 		Persona[] p = personasFromJson();
-		
-		for (Persona persona : p) {
-			persona.toString();
-		}
+//		
+//		for (Persona persona : p) {
+//			persona.toString();
+//		}
 	}
 }
