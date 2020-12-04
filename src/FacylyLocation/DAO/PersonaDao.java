@@ -36,7 +36,6 @@ public class PersonaDao {
 				longitude = obj.get("longitud").getAsDouble();
 				
 				Persona persona = new Persona (name, latitude, longitude);
-				System.out.println(persona.toString());
 				personas.add(persona);
 			}
 			

@@ -36,7 +36,6 @@ public static ArrayList <CentroDistribucion> centrosFromJson () {
 				longitude = obj.get("longitud").getAsDouble();
 				
 				CentroDistribucion centro = new CentroDistribucion (number, latitude, longitude);
-				System.out.println(centro.toString());
 				centros.add(centro);
 			}
 			
