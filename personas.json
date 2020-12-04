@@ -1,64 +1,103 @@
-{
-	"personas":[
+[
 		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+			"nombre": "MIGUEL ANGEL ZAMORA VALENZUELA",
+			"latitud": -34.529648305283686,
+			"longitud": -58.711538804489145
 		},
 		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+			"nombre": "MARTIN CAMPOY HERRAIZ",
+			"latitud": -34.513576075644664,
+			"longitud": -58.68754071098584 
 		},
 		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+			"nombre": "MIGUEL ANGEL LARREA LUIS",
+			"latitud": -34.50040949989878,
+			"longitud": -58.69752094322693
+		},
+		{ 
+			"nombre": "VICTOR SOLANO CONESA",
+			"latitud": -34.500834644814745,
+			"longitud": -58.70756537993633
 		},
 		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+			"nombre": "SANTIAGO ALLENDE SEPULVEDA",
+			"latitud": -34.49950110695363,
+			"longitud": -58.71618153397614
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "AITOR MOLANO MONZO",
+			"latitud": -34.49608496158865,
+			"longitud": -58.73636144500945
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "JOSE CARLOS ROSELLO COLL",
+			"latitud": -34.507779293525914,
+			"longitud": -58.75481164917968
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "CARLOS LUQUE OTERO",
+			"latitud": -34.515380885522134,
+			"longitud": -58.783093870580544
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "MARC CARRASCOSA VILAR",
+			"latitud": -34.53238193620018,
+			"longitud": -58.74813558892592
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "MARTIN BORRAS BAREA",
+			"latitud": -34.52908200373978,
+			"longitud": -58.72458730212767
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "JOAQUIN RICO OLIVERA",
+			"latitud": -34.531281973250216,
+			"longitud": -58.718639538378746
 		},
-		{
-			"nombre": "Agustin",
-			"latitude": -34.529648305283686,
-			"longitude": -58.711538804489145
+		{ 
+			"nombre": "ESTHER URRUTIA TORRE",
+			"latitud": -34.53748157465222,
+			"longitud": -58.70079624887111
 		},
-		{	
-			"nombre": "Emiliano",
-			"latitude": -34.503133058912155, 
-			"longitude": -58.6922779400745
+		{ 
+			"nombre": "ROSA ROPERO ZARATE",
+			"latitud": -34.52548192836782,
+			"longitud": -58.69399880529737
+		},
+		{ 
+			"nombre": "DOLORES QUINTELA SAMANIEGO",
+			"latitud": -34.54498047538861,
+			"longitud": -58.69314912485065
+		},
+		{ 
+			"nombre": "ISABEL ASENSI MATIAS",
+			"latitud": -34.55197884001891,
+			"longitud": -58.713055923918276
+		},
+		{ 
+			"nombre": "MARIA CONCEPCION PARRILLA QUERO",
+			"latitud": -34.50377817707159,
+			"longitud": -58.68368125661954
+		},
+		{ 
+			"nombre": "LAURA ALEGRE BOIX",
+			"latitud": -34.51378060775974,
+			"longitud": -58.70795784096556
+		},
+		{ 
+			"nombre": "MARIA ROZAS MUGICA",
+			"latitud": -34.513380534018864,
+			"longitud": -58.75541856395509
+		},
+		{ 
+			"nombre": "CARLA LUMBRERAS VAQUERO",
+			"latitud": -34.510980048423626,
+			"longitud": -58.72956400165036
+		},
+		{ 
+			"nombre": "MARIA ELENA RIVEIRO VALLS",
+			"latitud": -34.52978200024349,
+			"longitud": -58.74667899386614
 		}
-	]
-}
+		
+]

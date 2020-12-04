@@ -1,38 +1,51 @@
 package FacylyLocation.DAO;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
-import com.google.gson.Gson;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import FacilyLocation.Persona;
 
 public class PersonaDao {
 
-	public static Persona [] personasFromJson () {
+	public static ArrayList <Persona> personasFromJson () {
 		
-		Persona [] personas = new Persona [7];
+		ArrayList <Persona> personas = new ArrayList <Persona>();
+		
+		JsonParser parser = new JsonParser();
+		FileReader fr;
 		
 		try {
-			BufferedReader br = new BufferedReader (new FileReader("personas.json"));
-			Gson gson = new Gson();
-			personas = gson.fromJson(br, Persona[].class);
+			fr = new FileReader ("personas.json");
+			JsonArray array = parser.parse(fr).getAsJsonArray();
+			
+			String name;
+			double latitude;
+			double longitude;
+			
+			for (JsonElement jsonElement : array) {
+				JsonObject obj = jsonElement.getAsJsonObject();
+				
+				name = obj.get("nombre").getAsString();
+				latitude = obj.get("latitud").getAsDouble();
+				longitude = obj.get("longitud").getAsDouble();
+				
+				Persona persona = new Persona (name, latitude, longitude);
+				System.out.println(persona.toString());
+				personas.add(persona);
+			}
+			
+			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 		
 		return personas;
-	}
-	
-	public static void main(String[] args) throws FileNotFoundException {
-		
-		
-		Persona[] p = personasFromJson();
-//		
-//		for (Persona persona : p) {
-//			persona.toString();
-//		}
 	}
 }
