@@ -14,7 +14,7 @@ public class Solver {
 		for (Locales local : _instancia.getCentroDistribucion()) {
 			double distanciaTotal = 0;
 			for (Persona cliente : _instancia.getClientes()) {
-				distanciaTotal += FormulaDistancia.total(local.getLatitud(), local.getLongitud(), cliente.getLatitud(), cliente.getLongitud());
+				distanciaTotal += FormulaDistancia.distFrom(local.getLatitud(), local.getLongitud(), cliente.getLatitud(), cliente.getLongitud());
 			}
 			local.setCostoTotal(distanciaTotal);
 		}
