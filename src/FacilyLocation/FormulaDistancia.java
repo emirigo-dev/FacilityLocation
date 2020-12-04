@@ -1,6 +1,7 @@
 package FacilyLocation;
 
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class FormulaDistancia {
 	
@@ -13,7 +14,12 @@ public class FormulaDistancia {
 		 Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
 		 Double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 		 Double distance = R * c;
-		 return distance;
+		 
+		 //Limitacion de distancia a dos decimales. En caso de ser necesario
+		 //Redondea para arriba
+		 BigDecimal bd = new BigDecimal(distance).setScale(2, RoundingMode.UP);
+		 return bd.doubleValue();
+		 
 	}
 	
 	

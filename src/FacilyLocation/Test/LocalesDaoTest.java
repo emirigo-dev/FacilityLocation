@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import FacilyLocation.CentroDistribucion;
-import FacylyLocation.DAO.CentroDistribucionDao;
+import FacilyLocation.Locales;
+import FacylyLocation.DAO.LocalesDao;
 
-class CentroDistribucionDaoTest {
+class LocalesDaoTest {
 
 	@Test
 	void centroDistribucionSize() {
-		ArrayList <CentroDistribucion> centros = CentroDistribucionDao.centrosFromJson();
+		ArrayList <Locales> centros = LocalesDao.centrosFromJson();
 		assertTrue (centros.size() == 4);
 	}
 

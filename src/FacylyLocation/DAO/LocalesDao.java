@@ -8,14 +8,14 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import FacilyLocation.CentroDistribucion;
+import FacilyLocation.Locales;
 
-public class CentroDistribucionDao {
+public class LocalesDao {
 
 	
-public static ArrayList <CentroDistribucion> centrosFromJson () {
+public static ArrayList <Locales> centrosFromJson () {
 		
-		ArrayList <CentroDistribucion> centros = new ArrayList <CentroDistribucion>();
+		ArrayList <Locales> centros = new ArrayList <Locales>();
 		
 		JsonParser parser = new JsonParser();
 		FileReader fr;
@@ -35,7 +35,7 @@ public static ArrayList <CentroDistribucion> centrosFromJson () {
 				latitude = obj.get("latitud").getAsDouble();
 				longitude = obj.get("longitud").getAsDouble();
 				
-				CentroDistribucion centro = new CentroDistribucion (number, latitude, longitude);
+				Locales centro = new Locales (number, latitude, longitude);
 				centros.add(centro);
 			}
 			

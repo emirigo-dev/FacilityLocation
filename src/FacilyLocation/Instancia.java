@@ -11,7 +11,6 @@ public class Instancia {
 	public Instancia(int cantidadApertura) {
 		_locales = new ArrayList<Locales>();
 		_cantidadApertura = cantidadApertura;
-		//_clientes = new ArrayList<Persona>();
 	}
 
 	public void agregarClientes(Persona cliente) {
