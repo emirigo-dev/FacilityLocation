@@ -1,4 +1,4 @@
-package FacilyLocation;
+package FacilyLocation.Logic;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package FacilyLocation;
+package FacilyLocation.Logic;
 
 public class Persona {
 

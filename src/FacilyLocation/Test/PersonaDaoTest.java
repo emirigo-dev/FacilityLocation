@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import FacilyLocation.Persona;
+import FacilyLocation.Logic.Persona;
 import FacylyLocation.DAO.PersonaDao;
 
 class PersonaDaoTest {

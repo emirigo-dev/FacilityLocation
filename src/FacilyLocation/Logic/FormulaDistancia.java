@@ -1,4 +1,4 @@
-package FacilyLocation;
+package FacilyLocation.Logic;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
