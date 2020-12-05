@@ -38,7 +38,7 @@ public class Locales implements Comparable<Locales>{
 	}
 
 
-	public void agregarClientes(Persona cliente) {
+	public void agregarCliente(Persona cliente) {
 		_clientes.add(cliente);
 	}
 		

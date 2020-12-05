@@ -8,17 +8,30 @@ public class Instancia {
 	private int _cantidadApertura;
 	private ArrayList<Persona> _clientes;
 
-	public Instancia(int cantidadApertura) {
+	public Instancia() {
+		
 		_locales = new ArrayList<Locales>();
-		_cantidadApertura = cantidadApertura;
+		_clientes = new ArrayList <Persona>();
 	}
 
-	public void agregarClientes(Persona cliente) {
+	public void agregarCliente(Persona cliente) {
 		_clientes.add(cliente);
 	}
+	
+	public void agregarClientes (ArrayList <Persona> clientes) {
+		for (Persona persona : clientes) {
+			_clientes.add(persona);
+		}
+	}
 
-	public void agregar(Locales local) {
+	public void agregarLocal(Locales local) {
 		_locales.add(local);
+	}
+	
+	public void agregarLocales (ArrayList <Locales> locales) {
+		for (Locales local : locales) {
+			_locales.add(local);
+		}
 	}
 
 		
@@ -34,5 +47,15 @@ public class Instancia {
 
 	public int getCantidadApertura() {
 		return _cantidadApertura;
+	}
+	
+	public void setCantidadApertura (int x) {
+		if (x < 1 )
+			throw new IllegalArgumentException("Debe seleccionar una cantidad de locales");
+		
+		if (x > _locales.size())
+			throw new IllegalArgumentException("No se puede abrir mas locales que la cantidad de depositos disponibles");
+		
+		this._cantidadApertura = x;
 	}
 }
