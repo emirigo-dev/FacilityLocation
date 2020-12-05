@@ -24,18 +24,18 @@ public static ArrayList <Locales> centrosFromJson () {
 			fr = new FileReader ("centros.json");
 			JsonArray array = parser.parse(fr).getAsJsonArray();
 			
-			Integer number;
+			String nombre;
 			double latitude;
 			double longitude;
 			
 			for (JsonElement jsonElement : array) {
 				JsonObject obj = jsonElement.getAsJsonObject();
 				
-				number = obj.get("numero").getAsInt();
+				nombre = obj.get("nombre").getAsString();
 				latitude = obj.get("latitud").getAsDouble();
 				longitude = obj.get("longitud").getAsDouble();
 				
-				Locales centro = new Locales (number, latitude, longitude);
+				Locales centro = new Locales (nombre, latitude, longitude);
 				centros.add(centro);
 			}
 			

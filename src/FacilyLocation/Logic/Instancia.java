@@ -9,7 +9,7 @@ public class Instancia {
 	private ArrayList<Persona> _clientes;
 
 	public Instancia() {
-		
+
 		_locales = new ArrayList<Locales>();
 		_clientes = new ArrayList <Persona>();
 	}

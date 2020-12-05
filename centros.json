@@ -1,21 +1,21 @@
 [
     {
-        "numero": 1,
+        "nombre": "Rivadavia",
         "latitud": -34.522181722278994, 
         "longitud": -58.70067486591713
     },
     {
-        "numero": 2, 
+        "nombre": "Gutierrez", 
         "latitud": -34.5111300808166,
         "longitud": -58.70716885234531
     },
     {
-        "numero": 3, 
+        "nombre": "Maipu", 
         "latitud": -34.503828192230074,
         "longitud": -58.683135033350005
     },
     {
-        "numero": 4, 
+        "nombre": "Leon Suarez", 
         "latitud": -34.53178195808724,
         "longitud": -58.71008204208784
     }

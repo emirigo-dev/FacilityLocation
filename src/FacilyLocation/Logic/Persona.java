@@ -25,9 +25,4 @@ public class Persona {
 		return _nombre;
 	}
 	
-	@Override
-	public String toString () {
-		return "Nombre: " + this._nombre + " Latitud: " + this._latitud + " Longitud: " + this._longitud;
-	}
-
 }

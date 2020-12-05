@@ -10,7 +10,7 @@ public class Solver {
 		_instancia = instancia;
 	}
 
-	private void calcularCostoTotal() {
+	public void calcularCostoTotal() {
 		for (Locales local : _instancia.getCentroDistribucion()) {
 			double distanciaTotal = 0;
 			for (Persona cliente : _instancia.getClientes()) {
@@ -21,11 +21,11 @@ public class Solver {
 		
 	}
 	
-	public Solucion resolver(int cantidadApertura) {
+	public Solucion resolver() {
 		Solucion ret = new Solucion();
 		int contador = 0;
 		calcularCostoTotal();
-		while(contador<cantidadApertura) {
+		while(contador<_instancia.getCantidadApertura()) {
 			ret.agregar(localesOrdenados().get(contador));
 			contador ++;
 			}

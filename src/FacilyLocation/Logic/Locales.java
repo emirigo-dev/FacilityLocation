@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class Locales implements Comparable<Locales>{
 	
-	private int _numero;
+	private String _nombre;
 	private double _latitud;
 	private double _longitud;
 	private ArrayList<Persona> _clientes;
 	private double _costoTotal;
 	
-	public Locales(int numero, double latitud, double longitud)
+	public Locales(String nombre, double latitud, double longitud)
 	{
-		_numero = numero;
+		_nombre = nombre;
 		_latitud = latitud;
 		_longitud = longitud;
 		_clientes = new ArrayList<Persona>();
@@ -28,8 +28,8 @@ public class Locales implements Comparable<Locales>{
 		return _latitud;
 	}
 
-	public int getNumero() {
-		return _numero;
+	public String getNombre() {
+		return _nombre;
 	}
 
 
@@ -52,5 +52,4 @@ public class Locales implements Comparable<Locales>{
 		return (int) (this.getCostoTotal() - otro.getCostoTotal());
 	}
 	
-
 }

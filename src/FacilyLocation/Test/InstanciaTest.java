@@ -40,7 +40,7 @@ public class InstanciaTest {
 		ArrayList <Persona> personas = new ArrayList <Persona>();
 		ArrayList <Locales> locales = new ArrayList <Locales>();
 		for (int i = 0; i < 10; i++) {
-			Locales local = new Locales (i, -34.5111300808166, -58.71008204208784);
+			Locales local = new Locales (" "+ i, -34.5111300808166, -58.71008204208784);
 			Persona persona = new Persona ("Nombre", -34.513576075644664, -58.68754071098584);
 			
 			locales.add(local);
