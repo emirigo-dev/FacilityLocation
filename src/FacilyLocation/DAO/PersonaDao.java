@@ -1,4 +1,4 @@
-package FacylyLocation.DAO;
+package FacilyLocation.DAO;
 
 
 import java.io.FileReader;

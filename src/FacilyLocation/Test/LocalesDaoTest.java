@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
+import FacilyLocation.DAO.LocalesDao;
 import FacilyLocation.Logic.Locales;
-import FacylyLocation.DAO.LocalesDao;
 
 class LocalesDaoTest {
 
