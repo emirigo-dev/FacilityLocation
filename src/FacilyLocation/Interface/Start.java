@@ -1,6 +1,5 @@
 package FacilyLocation.Interface;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -11,6 +10,7 @@ import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+@SuppressWarnings("serial")
 public class Start extends JFrame {
 
 	private JPanel contentPane;
@@ -37,6 +37,7 @@ public class Start extends JFrame {
 	public Start() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(300, 175, 720, 480);
+		this.setTitle("Facily Location");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -46,7 +47,7 @@ public class Start extends JFrame {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				JMap jmap = new JMap();
+				Map jmap = new Map();
 				jmap.setVisible(true);
 				dispose();
 			}

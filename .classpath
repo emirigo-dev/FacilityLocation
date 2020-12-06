@@ -8,6 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/HP 14-C/Downloads/gson-2.2 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Usuario/git/FacilityLocation/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Usuario/git/FacilityLocation/JMapViewer.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

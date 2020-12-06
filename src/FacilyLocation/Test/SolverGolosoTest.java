@@ -40,7 +40,7 @@ public class SolverGolosoTest {
 		Instancia instancia = setUp();
 		Solver solver = new Solver(instancia);
 		Solucion solucion = solver.resolver();
-		assertTrue(solucion.getLocales().get(0).getNombre().equals("Gutierrez"));
+		assertTrue(solucion.getLocales().get(0).getNombre().equals("Mosconi"));
 	}
 
 	@Test
@@ -48,7 +48,7 @@ public class SolverGolosoTest {
 		Instancia instancia = setUp();
 		Solver solver = new Solver(instancia);
 		Solucion solucion = solver.resolver();
-		assertTrue(solucion.getLocales().get(1).getNombre().equals("Leon Suarez"));
+		assertTrue(solucion.getLocales().get(1).getNombre().equals("Vicente Lopez"));
 	}
 
 

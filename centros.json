@@ -1,21 +1,21 @@
 [
     {
-        "nombre": "Rivadavia",
+        "nombre": "UNGS",
         "latitud": -34.522181722278994, 
         "longitud": -58.70067486591713
     },
     {
-        "nombre": "Gutierrez", 
+        "nombre": "Mosconi", 
         "latitud": -34.5111300808166,
         "longitud": -58.70716885234531
     },
     {
-        "nombre": "Maipu", 
+        "nombre": "Eva Perón", 
         "latitud": -34.503828192230074,
         "longitud": -58.683135033350005
     },
     {
-        "nombre": "Leon Suarez", 
+        "nombre": "Vicente Lopez", 
         "latitud": -34.53178195808724,
         "longitud": -58.71008204208784
     }
