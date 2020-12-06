@@ -1,6 +1,5 @@
 package FacilyLocation.Interface;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -11,12 +10,16 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 
 import java.awt.Font;
+import java.awt.Image;
+import java.awt.Toolkit;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Color;
 
+@SuppressWarnings("serial")
 public class Select extends JFrame {
 
 	private JPanel contentPane;
@@ -53,6 +56,9 @@ public class Select extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		Image image = Toolkit.getDefaultToolkit().getImage("ubicacion.png");
+		setIconImage(image);
 		
 		JLabel lblNewLabel = new JLabel("Seleccione la cantidad de locales que desea abrir");
 		lblNewLabel.setFont(new Font("Consolas", Font.BOLD, 16));

@@ -19,6 +19,8 @@ import FacilyLocation.Logic.Locales;
 import FacilyLocation.Logic.Persona;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -58,6 +60,9 @@ public class Map extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		Image image = Toolkit.getDefaultToolkit().getImage("ubicacion.png");
+		setIconImage(image);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 704, 385);

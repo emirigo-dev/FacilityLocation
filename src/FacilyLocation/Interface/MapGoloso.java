@@ -3,6 +3,8 @@ package FacilyLocation.Interface;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
@@ -57,6 +59,9 @@ public class MapGoloso extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		Image image = Toolkit.getDefaultToolkit().getImage("ubicacion.png");
+		setIconImage(image);
 		
 		clientes = PersonaDao.personasFromJson();
 		locales = LocalesDao.centrosFromJson();
